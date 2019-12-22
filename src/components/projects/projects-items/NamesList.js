@@ -26,13 +26,15 @@ const Information = styled.div`
 `;
 
 const Button1 = styled.a`
-  position: relitive;
+  position: absolute;
   right: 20px;
   bottom: 2px;
+  z-index: 2;
   background-color: silver;
   border-radius: 20px;
   visibility: hidden;
   cursor: pointer;
+  text-decoration:none;
 `;
 
 const Holder =styled.div`
@@ -41,19 +43,19 @@ const Holder =styled.div`
   height: 200px;
   background: #353535;
   border-radius: 30px;
-  position: relitive;
+  position: relative ;
 
   &:hover{
 
     &>img{
       visibility: hidden;
     }
-    
+
     &>div{
       visibility: visible;
     }
     
-    &>button{
+    &>a{
       visibility: visible;
     }
 `;
@@ -98,10 +100,10 @@ class NamesList extends React.Component {
           <TitleHolder> 
             <Titel>{nameString}</Titel>
           </TitleHolder>
-          <Button1 href={link}></Button1>
           <Information>
             <Data>{infodata}</Data>
           </Information>
+          <Button1 href={link} target="_blank">See Page Here</Button1>
           <Image alt={imagelink} src={imagelink} />
         </Holder>
       );
