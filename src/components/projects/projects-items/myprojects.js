@@ -1,8 +1,7 @@
-import pig from '../../../img/project-pics/pig.png';
-import gif from '../../../img/project-pics/gif.png';
-
 class Projects {
+
   constructor(id, parents, info,link,image) {
+    
     this.id = id;
     this.info=info;
     this.link=link;
@@ -17,7 +16,7 @@ class Projects {
 }
 
 let data = [
-   new Projects("piglaten",["Aldair"],"asdsa","","https://i.imgur.com/CScNoZw.pngs"),
+   new Projects("piglaten",["Aldair"],"asdsa","https://agarciany.github.io/piglaten/","https://i.imgur.com/CScNoZw.pngs"),
    new Projects("Gif",["Aldair"],"testing","","https://i.imgur.com/lXpS3h7.png"),
    new Projects("DHelper",["Aldair"],"testing","","https://i.imgur.com/td8E1Rv.png"),
    new Projects("Hangman",["Aldair"],"testing","","https://i.imgur.com/yXijUj2.png"),
