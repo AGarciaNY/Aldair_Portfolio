@@ -1,24 +1,29 @@
-import React,{Component} from 'react';
+import React from 'react';
+import InfoBox from './projects-items/InfoBox';
+import data from './projects-items/myprojects';
 import styled from '@emotion/styled';
-import Cube from './projects-items/cube';
 
-const Title=styled.p`
-  color:white;
-  font-weight:bold;
-  font-size:20px;
-  text-align:center;
-`;
+const familyNamesList = data;
 
-export default class Projects extends Component{
 
-    render(){
-      return(
-        <div>
-          <Title>
-          Here are some projects that I've worked on with my partners and some that I worked on my own.
-          </Title>
-          <Cube/>
-        </div>
-      );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      info: null,
     }
+  }
+
+  render() {
+    return (
+      <div className='root'>
+        <InfoBox
+            namesList={familyNamesList}
+            />
+      </div>
+    );
+  }
 }
+
+export default App;

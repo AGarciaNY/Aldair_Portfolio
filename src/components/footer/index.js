@@ -8,6 +8,7 @@ const Container = styled.div`
   width:100%;
   background: linear-gradient(transparent,#484848,black,black);
   color:white;
+  margin:0;
 `;
 
 const HeadingCon = styled.div`
@@ -37,6 +38,7 @@ const Contact = styled.a`
 
 const ContactHolder = styled.ul`
   list-style-type: none;
+  margin:0;
 `;
 
 const Icon = styled.img`
