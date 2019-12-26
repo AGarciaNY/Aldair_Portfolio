@@ -1,7 +1,7 @@
 class Projects {
 
   constructor(id, parents, info,link,image) {
-    
+
     this.id = id;
     this.info=info;
     this.link=link;
@@ -16,13 +16,13 @@ class Projects {
 }
 
 let data = [
-   new Projects("piglaten",["Aldair"],"asdsa","https://agarciany.github.io/piglaten/","https://i.imgur.com/CScNoZw.pngs"),
-   new Projects("Gif",["Aldair"],"testing","","https://i.imgur.com/lXpS3h7.png"),
-   new Projects("DHelper",["Aldair"],"testing","","https://i.imgur.com/td8E1Rv.png"),
-   new Projects("Hangman",["Aldair"],"testing","","https://i.imgur.com/yXijUj2.png"),
-   new Projects("HeplingU",["Aldair"],"testing","","https://i.imgur.com/IOH1Cmh.jpg"),
-   new Projects("Rock, Paper,Scissors",["Aldair"],"testing","","https://i.imgur.com/ilwUQQP.png"),
-   new Projects("Gif",["Aldair"],"testing","","https://i.imgur.com/qQsS0WB.jpg"),
+   new Projects("Piglaten",["Aldair"],"asdsa","https://agarciany.github.io/piglaten/","https://i.imgur.com/CScNoZw.pngs"),
+   new Projects("Gif",["Aldair"],"testing","https://agarciany.github.io/gif/","https://i.imgur.com/lXpS3h7.png"),
+   new Projects("DHelper",["Jason","Aldair"],"testing","https://jalvarez2016.github.io/disorderhelper/","https://i.imgur.com/td8E1Rv.png"),
+   new Projects("Hangman",["Aldair"],"testing","https://agarciany.github.io/Hangman/","https://i.imgur.com/yXijUj2.png"),
+   new Projects("HeplingU",["Aldair","Jason","Jonson","Gary"],"testing","https://agarciany.github.io/helping-you/","https://i.imgur.com/IOH1Cmh.jpg"),
+   new Projects("Rock, Paper,Scissors",["Aldair"],"testing","https://kingaldair.github.io/advanced_rockpaperscissors_startercode/","https://i.imgur.com/ilwUQQP.png"),
+   new Projects("School page",["Aldair","Jason"],"testing","https://jalvarez2016.github.io/Compture-science-class/","https://i.imgur.com/qQsS0WB.jpg"),
 
 
 ];

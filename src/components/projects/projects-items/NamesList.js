@@ -16,7 +16,7 @@ const Titel = styled.p`
   color: white;
   text-align: center;
   font-weight: bold;
-  margin: 0;
+  margin: 10px;
   `;
 
 const Information = styled.div`
@@ -26,13 +26,17 @@ const Information = styled.div`
 `;
 
 const Button1 = styled.a`
-  position: relitive;
+  position: absolute;
   right: 20px;
-  bottom: 2px;
+  bottom: 10px;
+  z-index: 2;
   background-color: silver;
   border-radius: 20px;
   visibility: hidden;
   cursor: pointer;
+  text-decoration:none;
+  width:80px;
+  text-align: center;
 `;
 
 const Holder =styled.div`
@@ -41,19 +45,19 @@ const Holder =styled.div`
   height: 200px;
   background: #353535;
   border-radius: 30px;
-  position: relitive;
+  position: relative ;
 
   &:hover{
 
     &>img{
       visibility: hidden;
     }
-    
+
     &>div{
       visibility: visible;
     }
     
-    &>button{
+    &>a{
       visibility: visible;
     }
 `;
@@ -71,6 +75,7 @@ const Data = styled.p`
   text-indent: 50px;
   padding: 0 10px 0;
   width: 280px;
+  margin:0;
 `;
 
 const Holdertwo = styled.div`
@@ -98,10 +103,10 @@ class NamesList extends React.Component {
           <TitleHolder> 
             <Titel>{nameString}</Titel>
           </TitleHolder>
-          <Button1 href={link}></Button1>
           <Information>
             <Data>{infodata}</Data>
           </Information>
+          <Button1 href={link} target="_blank">Click Here</Button1>
           <Image alt={imagelink} src={imagelink} />
         </Holder>
       );

@@ -1,16 +1,22 @@
 import React,{Component} from 'react';
-//import styled from '@emotion/styled';
+import styled from '@emotion/styled';
 
-import MyArt from './artbox/boxes'
+const Holder = styled.div`
+height:500px;
+`;
+
+const Hone = styled.h1`
+  text-align: center;
+  color:white;
+`;
 
 export default class ArtWork extends Component{
 
     render(){
       return(
-        <div>
-            <h1>hi there this is my art</h1>
-            <MyArt/>
-        </div>
+        <Holder>
+            <Hone>Coming Soon</Hone>
+        </Holder>
       );
     }
 }
