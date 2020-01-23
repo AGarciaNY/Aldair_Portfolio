@@ -39,9 +39,11 @@ let data = [
   "https://jalvarez2016.github.io/Compture-science-class/","https://i.imgur.com/qQsS0WB.jpg"),
   new Projects("Team K",['Aldair',"Tanzema"],
   "Testing",
-  "https://tanzema.github.io/studio1/")
+  "https://tanzema.github.io/studio1/"),
+  new Projects("MakeSpace",["Aldair","Grham","Vanessa"],
+  "",
+  "https://makespace.com/features/","")
 
 ];
 console.log(data);
 export default data;
-  

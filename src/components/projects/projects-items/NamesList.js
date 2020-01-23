@@ -72,10 +72,11 @@ const Data = styled.p`
   position: absolute;
   color: white;
   font-size: 12px;
-  text-indent: 50px;
+  text-indent: 20px;
   padding: 0 10px 0;
   width: 280px;
   margin:0;
+  font-family:cursive;
 `;
 
 const Holdertwo = styled.div`
