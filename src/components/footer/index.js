@@ -5,11 +5,12 @@ import github from '../../img/icons/github.png';
 import linkin from '../../img/icons/linkin.png';
 
 const Container = styled.div`
-  width: 100%;
   background: linear-gradient(transparent,#484848,black,black);
   color: white;
   margin: 0;
   padding: 0 0 20px;
+  position: relative;
+  bottom:-5px;
 `;
 
 const Title = styled.h1`
