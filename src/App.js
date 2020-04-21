@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import Nav from './components/nav';
 import Footer from './components/footer';
 import Home from './components/home';
-import ArtWork from './components/art-work';
+import ArtWork from './components/art-work/index';
 import Projects from './components/projects';
 
 import './App.css'
@@ -11,7 +11,7 @@ export default class App extends Component{
   constructor() {
     super();
     this.state = {
-      pickapage: 'test',
+      pickapage: 'artwork',
     }
   }
 
@@ -22,16 +22,6 @@ export default class App extends Component{
   }  
 
   render(){
-
-    if(this.state.pickapage === 'test'){
-      return (
-      <div id="body">
-        <Nav changepage={(page)=> this.pickAPage(page)}/>
-        <Projects />
-        <Footer />
-      </div>
-      );
-    }
 
     if(this.state.pickapage === 'home'){
       return (
