@@ -19,7 +19,7 @@ let data = [
   new Projects("Bird","Aldair","","https://i.imgur.com/zIsrmLI.jpg"),
   new Projects("elephant","Adlair","","https://i.imgur.com/GBNXMbf.jpg"),
   new Projects("Rino","Aldair","","https://i.imgur.com/dass7ZB.jpg"),
-  new Projects("Rino","Aldair","","https://i.imgur.com/C69zpJs.jpg")
+  new Projects("baseball catcher","Aldair","","https://i.imgur.com/C69zpJs.jpg")
 ];
 console.log(data);
 export default data;
