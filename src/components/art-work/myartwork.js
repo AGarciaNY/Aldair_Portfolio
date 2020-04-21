@@ -20,6 +20,5 @@ let data = [
   new Projects("Rino","Aldair","https://i.imgur.com/dass7ZB.jpg"),
   new Projects("baseball catcher","Aldair","https://i.imgur.com/C69zpJs.jpg")
 ];
-console.log(data);
 export default data;
   

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from '@emotion/styled';
 import mail from '../../img/icons/mail.png';
 import github from '../../img/icons/github.png';
@@ -10,7 +10,7 @@ const Container = styled.div`
   margin: 0;
   padding: 0 0 20px;
   position: relative;
-  bottom:-5px;
+  bottom: -5px;
 `;
 
 const Title = styled.h1`
@@ -53,27 +53,27 @@ const Contact = styled.a`
   text-decoration: none;
 `;
 
-
-
-const Footer=()=>(
-    <Container>
-      <Title>More Informtion</Title>
-        <ContactHolder>
-          <Title2>Contact Informtion Here</Title2>
-          <Dataholder>
-            <Icon src={mail} alt={mail}/>
-            <Contact target="_blank">Aldairgarcia360@gmail.com</Contact>
-          </Dataholder>
-          <Dataholder>
-            <Icon src={github} alt={github}/>
-            <Contact href="https://github.com/AGarciaNY" target="_blank" >AGarciaNY</Contact>
-          </Dataholder>
-          <Dataholder>
-            <Icon src={linkin} alt={github}/>
-            <Contact href='https://www.linkedin.com/in/aldair-g-b20525157/' target="_blank">Aldair Garcia</Contact>
-          </Dataholder>
-        </ContactHolder>
-    </Container>
-);
-
-export default Footer;
+export default class Footer extends Component{
+    render(){
+      return(
+        <Container>
+          <Title>More Informtion</Title>
+            <ContactHolder>
+              <Title2>Contact Informtion Here</Title2>
+              <Dataholder>
+                <Icon src={mail} alt={mail}/>
+                <Contact target="_blank">Aldairgarcia360@gmail.com</Contact>
+              </Dataholder>
+              <Dataholder>
+                <Icon src={github} alt={github}/>
+                <Contact href="https://github.com/AGarciaNY" target="_blank" >AGarciaNY</Contact>
+              </Dataholder>
+              <Dataholder>
+                <Icon src={linkin} alt={github}/>
+                <Contact href='https://www.linkedin.com/in/aldair-g-b20525157/' target="_blank">Aldair Garcia</Contact>
+              </Dataholder>
+            </ContactHolder>
+        </Container>
+      )
+    }
+}

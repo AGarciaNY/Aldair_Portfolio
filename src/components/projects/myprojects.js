@@ -42,8 +42,13 @@ let data = [
   "https://tanzema.github.io/studio1/"),
   new Projects("MakeSpace",["Aldair","Grham","Vanessa"],
   "",
-  "https://makespace.com/features/","")
+  "https://makespace.com/features/",""),
+  new Projects('Anti Covid-19',['Aldair','Jason','Ye P'],
+  'hakathon',
+  'https://ta-ag-ja-yep-anticovid.netlify.app/',
+  'https://i.imgur.com/btPZrCb.png'
+
+  )
 
 ];
-console.log(data);
 export default data;

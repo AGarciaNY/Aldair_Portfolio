@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import data from './myprojects';
 import styled from '@emotion/styled';
 
@@ -11,7 +11,6 @@ const Holder =styled.div`
   position: relative ;
 
   &:hover{
-
     &>img{
       visibility: hidden;
     }
@@ -31,6 +30,7 @@ const Titel = styled.p`
   font-weight: bold;
   margin: 10px;
 `;
+
 const Tap = styled.p`
   position: absolute;
   Top: 5px;
@@ -38,6 +38,7 @@ const Tap = styled.p`
   color: white;
   font-size: 12px;
 `;
+
 const Image = styled.img`
   display: block;
   margin: 0 auto;
@@ -92,7 +93,7 @@ const Holdertwo = styled.div`
   padding:50px 0;
 `;
 
-class NamesList extends React.Component {
+export default class NamesList extends Component{
 
   render() {
 
@@ -122,5 +123,3 @@ class NamesList extends React.Component {
     );
   }
 }
-
-export default NamesList;
