@@ -25,12 +25,13 @@ const Image = styled.img`
 `;
 
 const Button1 = styled.a`
-  z-index: 2;
+  
   position: absolute;
-  left: 100px;
+  width:175px;
   bottom: 10px;
-  width: 100px;
-  padding:5px 0;
+  left:52.5px;
+  z-index: 2;
+  padding: 5px 10px;
 
   color: black;
   background-color: silver;
@@ -39,6 +40,17 @@ const Button1 = styled.a`
   text-decoration: none;
   font-size: 14px;
   text-align: center;
+  &:hover{
+    font-size: 16px;
+    width:185px;
+    bottom:8px;
+    left:50.5px;
+  }
+  &:active{
+    font-size: 14px;
+    left:52.5px;
+    bottom:8px;
+  }
 `;
 
 const Holdertwo = styled.div`
