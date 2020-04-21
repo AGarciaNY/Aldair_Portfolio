@@ -2,49 +2,83 @@ import React, {Component} from 'react';
 import styled from '@emotion/styled';
 
 const Navcontainer = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 6;
   height: 100px;
+  display: flex;
+
   background: linear-gradient(black,black,#4c4c4c, transparent);
   color: white;
-  padding-top: 30px;
-  display: flex;
+  
+  @media only screen and (max-width: 750px) {
+    position:static;
+    height:150px;
+  }
 `;
 
-const NameHolder=styled.div`
-  width: 300px;
-`;
-const MyName = styled.h1`
-  margin: 0 0 0 40px;
-  font-size: 30px
-  width: 200px;
+const MyName = styled.p`
+  position: relative;
+  top: 30px;
+  left: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  margin:0;
+  @media only screen and (max-width: 750px) {
+    width: 100%;
+    position: static;
+    padding:20px 0 0 0;
+    text-align: center;
+  }
 `;
 
 const LinkHolder = styled.div`
   position: absolute;
-  right: 0;
-  display: block;
-  padding-top: 10px;
-  padding-right: 70px;
+  right: 150px;
+  top: 40px;
+  @media only screen and (max-width: 750px) {
+    top: 80px;
+    right: 110px;
+  }
 `;
+
 const Links = styled.button`
-  float: Right;
-  background: transparent;
   border: 0;
+  width: 100px;
+
+  background: transparent;
   text-decoration: none;
   color: white;
-  padding-left: 30px;
   font-size: 16px;
-  
+  text-align: center;
+
   &:hover{
     font-size: 18px;
-    padding-left: 22px;
+  }
+
+  @media only screen and (max-width: 750px) {
+    width:80px;
+    font-size: 14px;
+    &:hover{
+      font-size: 15px;
+    }
   }
 `;
 
 const DropDown = styled.div`
-  padding-left: 30px;
-  
+  position: relative;
+  width:100px;
+  left: 300px;
+  text-align: center;
+  top: -22px;
+  z-index: 100;
+
   &:hover div{
     display: block;
+  }
+  @media only screen and (max-width: 750px) {
+    left:240px;
+
   }
 `;
 
@@ -53,55 +87,52 @@ const DropButton = styled.button`
   padding: 0;
   border: none;
   color: white;
-  min-width: 140px;
   font-size: 16px;
-
+  z-index: 100;
   &:hover{
     font-size: 18px;
+  }
+  @media only screen and (max-width: 750px) {
+    width: 80px;
+    font-size: 14px;
+    &:hover{
+      font-size: 15px;
+    }
   }
 `;
 
 const DropdownHolder=styled.div`
+  position: relative;
+  left: -20px;
   display: none;
   background: transparent;
   min-width: 140px;
   border-radius: 20px;
   padding: 8px 0 0;
-`;
-
-
-
-const Right=styled.li`
-  list-style-type: none;
-  float: right;
-  z-index: 1;
-`;
-
-const Text = styled.div`
-  width: 140px;
-  height: 30px;
-  margin: 3px 0;
-  position: relative;
-  z-index: 1;
-  
-  &:hover{
-    margin: 5px 0;
+  z-index: 100;
+  @media only screen and (max-width: 750px) {
+    left: -30px;
   }
 `;
+
+
 
 const TextFont = styled.button`
   width: 140px;
   height: 30px;
   display: block;
+  margin: 3px 0;
+
   background: silver;
-  z-index: 1;
+  z-index: 30;
   border-radius: 20px;
   text-decoration: none;
   color: white;
   font-size: 15px;
 
   &:hover{
-    position: absolute;
+    position: relative;
+    margin: 5px 0;
     left: -10px;
     width: 160px;
     height: 35px;
@@ -114,27 +145,20 @@ export default class Nav extends Component{
   render(){
 
     return(
-
     <Navcontainer>
-      <NameHolder>
-        <MyName>Aldair's Portfolio</MyName>
-      </NameHolder>
+      <MyName>Aldair's Portfolio</MyName>
       <LinkHolder>
-        <Right>
+          <Links onClick={() => this.props.changepage('home')}>Home</Links>
+          <Links onClick={() => this.props.changepage('artwork')}>Art Work</Links>
+          <Links onClick={() => this.props.changepage('projects')}>Projects</Links>
           <DropDown>
             <DropButton>Dropdown</DropButton>
             <DropdownHolder>
-              <Text><TextFont>Link 1</TextFont></Text>
-              <Text><TextFont>Link 2</TextFont></Text>
-              <Text><TextFont>Link 3</TextFont></Text>
+              <TextFont>Link 1</TextFont>
+              <TextFont>Link 2</TextFont>
+              <TextFont>Link 3</TextFont>
             </DropdownHolder>
           </DropDown>
-        </Right>
-        <Right>
-          <Links onClick={() => this.props.changepage('projects')}>Projects</Links>
-          <Links onClick={() => this.props.changepage('artwork')}>Art Work</Links>
-          <Links onClick={() => this.props.changepage('home')}>Home</Links>
-        </Right>
       </LinkHolder>
     </Navcontainer>
     );

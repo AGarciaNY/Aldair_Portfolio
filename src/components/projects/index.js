@@ -31,14 +31,22 @@ const Titel = styled.p`
   font-weight: bold;
   margin: 10px;
 `;
-
+const Tap = styled.p`
+  position: absolute;
+  Top: 5px;
+  left: 20px;
+  color: white;
+  font-size: 12px;
+`;
 const Image = styled.img`
   display: block;
   margin: 0 auto;
   height: 140px;
+  z-index: 10;
 `;
 
 const Button1 = styled.a`
+  visibility: hidden;
   position: absolute;
   right: 20px;
   bottom: 10px;
@@ -52,15 +60,16 @@ const Button1 = styled.a`
   cursor: pointer;
   text-decoration: none;
   text-align: center;
+
   &:hover{
     font-size: 18px;
-    right:10px;
-    bottom:5px;
+    right: 10px;
+    bottom: 5px;
   }
   &:active{
     font-size: 16px;
-    right:12px;
-    bottom:7px;
+    right: 12px;
+    bottom: 7px;
   }
 `;
 
@@ -98,6 +107,7 @@ class NamesList extends React.Component {
       namesLiList.push(
         <Holder key={i}>
           <Titel>{nameString}</Titel>
+          <Tap>Tap me</Tap>
           <Data>{infodata}</Data>
           <Button1 href={link} target="_blank">Click Here</Button1>
           <Image alt={imagelink} src={imagelink} />
