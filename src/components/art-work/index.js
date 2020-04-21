@@ -70,8 +70,6 @@ export default class ArtWork extends React.Component {
       let nameString = data[i].id;
       let imagelink=data[i].image;
 
-      console.log(imagelink);
-
       namesLiList.push(
         <Holder key={i}>
             <Titel>{nameString}</Titel>
