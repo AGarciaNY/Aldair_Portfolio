@@ -31,7 +31,13 @@ const Titel = styled.p`
   font-weight: bold;
   margin: 10px;
 `;
-
+const Tap = styled.p`
+  position: absolute;
+  Top: 5px;
+  left: 20px;
+  color: white;
+  font-size: 12px;
+`;
 const Image = styled.img`
   display: block;
   margin: 0 auto;
@@ -101,6 +107,7 @@ class NamesList extends React.Component {
       namesLiList.push(
         <Holder key={i}>
           <Titel>{nameString}</Titel>
+          <Tap>Tap me</Tap>
           <Data>{infodata}</Data>
           <Button1 href={link} target="_blank">Click Here</Button1>
           <Image alt={imagelink} src={imagelink} />
