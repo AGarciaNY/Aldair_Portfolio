@@ -36,9 +36,11 @@ const Image = styled.img`
   display: block;
   margin: 0 auto;
   height: 140px;
+  z-index: 10;
 `;
 
 const Button1 = styled.a`
+  visibility: hidden;
   position: absolute;
   right: 20px;
   bottom: 10px;
@@ -52,15 +54,16 @@ const Button1 = styled.a`
   cursor: pointer;
   text-decoration: none;
   text-align: center;
+
   &:hover{
     font-size: 18px;
-    right:10px;
-    bottom:5px;
+    right: 10px;
+    bottom: 5px;
   }
   &:active{
     font-size: 16px;
-    right:12px;
-    bottom:7px;
+    right: 12px;
+    bottom: 7px;
   }
 `;
 
