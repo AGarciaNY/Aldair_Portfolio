@@ -9,7 +9,7 @@ const Holder =styled.div`
   background: #353535;
   border-radius: 30px;
   position: relative ;
-
+  z-index:1;
   &:hover{
     &>img{
       visibility: hidden;

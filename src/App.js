@@ -7,13 +7,14 @@ import Home from './components/home';
 import ArtWork from './components/art-work/index';
 import Projects from './components/projects';
 import Commentpage from './components/comment/index';
+import MypastWork from'./components/workhistory/index';
 import './App.css'
+
 export default class App extends Component{
-  
   constructor() {
     super();
     this.state = {
-      pickapage: 'comments',
+      pickapage: 'home',
     }
   }
 
@@ -41,7 +42,7 @@ export default class App extends Component{
   firebase.analytics();
 
   var database = firebase.database();
-  var databaseRefcomment = database.ref("/");
+  var databaseRefcomment = database.ref("/comments");
 
     if(this.state.pickapage === 'home'){
       return (
@@ -76,7 +77,19 @@ export default class App extends Component{
       return (
         <div id="body">
           <Nav changepage={(page)=> this.pickAPage(page)}/>
-          <Commentpage databaseRefc={databaseRefcomment}/>
+          <Commentpage 
+            databaseRefc={databaseRefcomment}
+            />
+          <Footer />
+        </div>
+      )
+    }
+    if(this.state.pickapage === 'MypastWork'){
+      return (
+        <div id="body">
+          <Nav changepage={(page)=> this.pickAPage(page)}/>
+          <MypastWork 
+            />
           <Footer />
         </div>
       )

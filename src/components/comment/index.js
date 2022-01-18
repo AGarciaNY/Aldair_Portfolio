@@ -1,16 +1,38 @@
 import React,{Component} from 'react';
+import styled from '@emotion/styled';
+
+const Holder =styled.div`
+`;
 
 export default class Commentpage extends Component{
-  componentDidMount(){
-    this.props.databaseRefc.on('value',snapshot =>{ 
-      console.log(snapshot.val())
-    })
+  constructor() {
+    super();
+    this.state = {
+      name: 'np',
+      gmail:'np',
+      comment:'np',
+    }
+  }
+  pushdata=()=>{
+    this.props.databaseRefc.push(
+      {
+        "name":{
+        comment:"best game",
+        Gmail:"testing@gmail.com"
+        }
+      }
+    )
   }
   render(){
     return(
-      <div>
+      <Holder>
         <h1>hi there comments</h1>
-      </div>
+        <input></input>
+        <input></input>
+        <input></input>
+        
+        <button onClick={this.pushdata}>testing</button>
+      </Holder>
     )
   }
 }

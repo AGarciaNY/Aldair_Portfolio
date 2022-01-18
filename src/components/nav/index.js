@@ -155,7 +155,7 @@ export default class Nav extends Component{
             <DropButton>Dropdown</DropButton>
             <DropdownHolder>
               <TextFont onClick={() => this.props.changepage('comments')}>comment here</TextFont>
-              <TextFont>Link 2</TextFont>
+              <TextFont onClick={() => this.props.changepage('MypastWork')}>Link 2</TextFont>
               <TextFont>Link 3</TextFont>
             </DropdownHolder>
           </DropDown>
