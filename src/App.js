@@ -14,7 +14,7 @@ export default class App extends Component{
   constructor() {
     super();
     this.state = {
-      pickapage: 'home',
+      pickapage: 'artwork',
     }
   }
 
@@ -25,24 +25,24 @@ export default class App extends Component{
   }  
 
   render(){
-  var firebaseConfig = {
-    apiKey: "AIzaSyDFpyy578XqiTBK2z68gC_KVfh1iGlAf48",
-    authDomain: "comments-41a28.firebaseapp.com",
-    databaseURL: "https://comments-41a28.firebaseio.com",
-    projectId: "comments-41a28",
-    storageBucket: "comments-41a28.appspot.com",
-    messagingSenderId: "7885892044",
-    appId: "1:7885892044:web:003615c87f24ee6e2ed569",
-    measurementId: "G-GRE2SPSERQ"
-  };
-  if (!firebase.apps.length) {
-    firebase.initializeApp(firebaseConfig);
-  }
-  // firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  // var firebaseConfig = {
+  //   apiKey: "AIzaSyDFpyy578XqiTBK2z68gC_KVfh1iGlAf48",
+  //   authDomain: "comments-41a28.firebaseapp.com",
+  //   databaseURL: "https://comments-41a28.firebaseio.com",
+  //   projectId: "comments-41a28",
+  //   storageBucket: "comments-41a28.appspot.com",
+  //   messagingSenderId: "7885892044",
+  //   appId: "1:7885892044:web:003615c87f24ee6e2ed569",
+  //   measurementId: "G-GRE2SPSERQ"
+  // };
+  // if (!firebase.apps.length) {
+  //   firebase.initializeApp(firebaseConfig);
+  // }
+  // // firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
 
-  var database = firebase.database();
-  var databaseRefcomment = database.ref("/comments");
+  // var database = firebase.database();
+  // var databaseRefcomment = database.ref("/comments");
 
     if(this.state.pickapage === 'home'){
       return (
@@ -78,7 +78,7 @@ export default class App extends Component{
         <div id="body">
           <Nav changepage={(page)=> this.pickAPage(page)}/>
           <Commentpage 
-            databaseRefc={databaseRefcomment}
+            //databaseRefc={databaseRefcomment}
             />
           <Footer />
         </div>

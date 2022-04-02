@@ -102,7 +102,7 @@
             star[c].style.clip="rect(0px, 5px, 5px, 0px)";
             star[c].style.zIndex="0";
             star[c].style.visibility="visible";
-            starv[c]=50;
+            starv[c]=40;
             break;
           }
         }
@@ -110,7 +110,7 @@
           if (starv[c]) update_star(c);
           if (tinyv[c]) update_tiny(c);
         }
-        setTimeout("sparkle()", 40);
+        setTimeout("sparkle()", 30);
       }
       
       function update_star(i) {
@@ -132,8 +132,8 @@
           tinyv[i]=50;
           tiny[i].style.top=(tinyy[i]=stary[i])+"px";
           tiny[i].style.left=(tinyx[i]=starx[i])+"px";
-          tiny[i].style.width="2px";
-          tiny[i].style.height="2px";
+          tiny[i].style.width="10px";
+          tiny[i].style.height="10px";
           star[i].style.visibility="hidden";
           tiny[i].style.visibility="visible"
         }
