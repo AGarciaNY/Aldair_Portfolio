@@ -6,7 +6,6 @@ class Projects {
 
     this.id = id;
     this.image=image;
-    
     this.parents = [];
     for (const parent of parents) {
       this.parents.push({ id: parent });
