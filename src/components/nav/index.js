@@ -151,14 +151,14 @@ export default class Nav extends Component{
           <Links onClick={() => this.props.changepage('home')}>Home</Links>
           <Links onClick={() => this.props.changepage('artwork')}>Art Work</Links>
           <Links onClick={() => this.props.changepage('projects')}>Projects</Links>
-          <DropDown>
+          {/* <DropDown>
             <DropButton>Dropdown</DropButton>
             <DropdownHolder>
               <TextFont onClick={() => this.props.changepage('comments')}>comment here</TextFont>
               <TextFont onClick={() => this.props.changepage('MypastWork')}>Link 2</TextFont>
               <TextFont>Link 3</TextFont>
             </DropdownHolder>
-          </DropDown>
+          </DropDown> */}
       </LinkHolder>
     </Navcontainer>
     );

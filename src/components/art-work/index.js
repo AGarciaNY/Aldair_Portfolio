@@ -84,11 +84,18 @@ const LImageH= styled.div(
   })
 );
 
-const LImage = styled.img`
-  height:450px;
-  border-style:double;
-  border-width:10px;
-  border-color:black;
+const LImage = styled.div`
+    height: 500px;
+    width: 500px;
+    border-style:double;
+    border-width:10px;
+    border-color:black;
+    background-image: url(${props => props.Limg});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #424242;
+
 `;
 const LIButton=styled.button`
 height:20px;
@@ -158,7 +165,7 @@ export default class ArtWork extends React.Component {
         <LImageH display={this.state.SON} >
           <Stiky >
           <LIButton onClick={()=> this.hideimage()}>X</LIButton>
-          <LImage src={this.state.artlink} alt={this.state.artlink}/>
+          <LImage Limg={this.state.artlink}/>
           </Stiky>
         </LImageH>
       </HolderOne>

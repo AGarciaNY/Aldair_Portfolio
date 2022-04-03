@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import data from './myprojects';
 import styled from '@emotion/styled';
+import img from '../../img/icons/newcursor.png'
 
 const Holder =styled.div`
   margin: 30px;
@@ -29,9 +30,11 @@ const Titel = styled.p`
   color: white;
   font-weight: bold;
   margin: 10px;
+  cursor: context-menu;
 `;
 
 const Tap = styled.p`
+  cursor: context-menu;
   position: absolute;
   Top: 5px;
   left: 20px;
@@ -65,7 +68,7 @@ const Button1 = styled.a`
   &:hover{
     font-size: 18px;
     right: 10px;
-    bottom: 5px;
+    bottom: 7px;
   }
   &:active{
     font-size: 16px;
@@ -79,7 +82,7 @@ const Data = styled.p`
   position: absolute;
   padding: 0 20px ;
   margin: 0;
-
+  cursor: context-menu;
   color: white;
   font-size: 12px;
   font-family: cursive;
@@ -91,6 +94,7 @@ const Holdertwo = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   padding:50px 0;
+  cursor: url(../../img/icons/cursor3.png), default;
 `;
 
 export default class NamesList extends Component{
