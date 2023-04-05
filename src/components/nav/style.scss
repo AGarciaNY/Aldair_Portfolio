@@ -1,0 +1,145 @@
+.nav-container {
+    position: relative;
+    height: 100px;
+    background: linear-gradient(199deg, #000, #fff);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-name {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 20px 20px 0;
+}
+
+.nav-link-holder {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-link-div {
+    margin: 30px 20px 0;
+}
+
+.nav-links {
+    width: 100px;
+    background: transparent;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    transition: 1s;
+
+    &:hover {
+        font-size: 22px;
+    }
+
+    // @media only screen and (max-width: 750px) {
+    //     width: 80px;
+    //     font-size: 14px;
+    //     transition-duration: 10s;
+    //     &:hover {
+    //         transform: scale(1.3);
+    //     }
+    // }
+}
+
+@media only screen and (max-width: 750px) {
+    .nav-name {
+        font-size: 30px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .nav-link-holder {
+        margin: 0;
+    }
+
+    .nav-link-div {
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+
+    .nav-links {
+        color: #2c2121;
+    }
+}
+
+// const DropDown = styled.div`
+//   position: relative;
+//   width:100px;
+//   left: 300px;
+//   text-align: center;
+//   top: -22px;
+//   z-index: 100;
+
+//   &:hover div{
+//     display: block;
+//   }
+//   @media only screen and (max-width: 750px) {
+//     left:240px;
+
+//   }
+// `;
+
+// const DropButton = styled.button`
+//   background-color: transparent;
+//   padding: 0;
+//   border: none;
+//   color: white;
+//   font-size: 16px;
+//   z-index: 100;
+//   &:hover{
+//     font-size: 18px;
+//   }
+//   @media only screen and (max-width: 750px) {
+//     width: 80px;
+//     font-size: 14px;
+//     &:hover{
+//       font-size: 15px;
+//     }
+//   }
+// `;
+
+// const DropdownHolder=styled.div`
+//   position: relative;
+//   left: -20px;
+//   display: none;
+//   background: transparent;
+//   min-width: 140px;
+//   border-radius: 20px;
+//   padding: 8px 0 0;
+//   z-index: 100;
+//   @media only screen and (max-width: 750px) {
+//     left: -30px;
+//   }
+// `;
+
+
+
+// const TextFont = styled.button`
+//   width: 140px;
+//   height: 30px;
+//   display: block;
+//   margin: 3px 0;
+
+//   background: silver;
+//   z-index: 30;
+//   border-radius: 20px;
+//   text-decoration: none;
+//   color: white;
+//   font-size: 15px;
+
+//   &:hover{
+//     position: relative;
+//     margin: 5px 0;
+//     left: -10px;
+//     width: 160px;
+//     height: 35px;
+//     font-size: 18px;
+//   }
+// `;

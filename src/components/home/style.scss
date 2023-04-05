@@ -1,0 +1,28 @@
+.home-container {
+    font-family: 'Merienda One', cursive;
+}
+
+.home-portfolio-pic {
+    display: flex;
+    justify-content: center;
+
+    img {
+        margin: 30px 0;
+        height: 200px;
+        border-radius: 100%;
+    }
+}
+
+.home-header-name {
+    text-align: center;
+}
+.home-content{
+    display: flex;
+    justify-content: center;
+    div{
+        background-color: red;
+        .home-about-title{
+            font-size: 20px;
+        }
+    }
+}

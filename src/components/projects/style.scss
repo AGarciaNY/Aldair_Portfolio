@@ -1,0 +1,92 @@
+.project-holder {
+    margin: 30px;
+    width: 300px;
+    height: 200px;
+    background: #353535;
+    border-radius: 30px;
+    position: relative;
+
+    &:hover {
+        img {
+            visibility: hidden;
+        }
+
+        p {
+            visibility: visible;
+        }
+
+        a {
+            visibility: visible;
+        }
+    }
+}
+
+.project-titel {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.project-tap {
+    position: absolute;
+    Top: 5px;
+    left: 20px;
+    color: white;
+    font-size: 12px;
+}
+
+.project-image {
+    display: block;
+    margin: 0 auto;
+    height: 140px;
+    z-index: 10;
+}
+
+.project-button1 {
+    visibility: hidden;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    z-index: 2;
+    padding: 0 10px;
+    font-size: 14px;
+
+    color: black;
+    background-color: silver;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+        font-size: 18px;
+        right: 10px;
+        bottom: 5px;
+    }
+
+    &:active {
+        font-size: 16px;
+        right: 12px;
+        bottom: 7px;
+    }
+}
+
+.project-data {
+    visibility: hidden;
+    position: absolute;
+    padding: 0 20px;
+    margin: 0;
+
+    color: white;
+    font-size: 12px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.project-holdertwo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+}

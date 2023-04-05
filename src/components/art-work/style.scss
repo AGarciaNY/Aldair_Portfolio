@@ -1,0 +1,102 @@
+.art-holder {
+    margin: 20px;
+    width: 225px;
+    height: 250px;
+    background: #353535;
+    border-radius: 30px;
+    position: relative;
+}
+
+.art-holder-one {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.art-titel {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.art-image {
+    display: block;
+    margin: 0 auto;
+    height: 140px;
+}
+
+.art-button-one {
+    position: absolute;
+    width: 175px;
+    bottom: 10px;
+    left: 25px;
+    z-index: 2;
+    padding: 5px 30px;
+    color: black;
+    background-color: silver;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+
+    &:hover {
+        font-size: 16px;
+        width: 185px;
+        bottom: 8px;
+        left: 20px;
+    }
+
+    &:active {
+        font-size: 14px;
+        left: 23px;
+        bottom: 8px;
+    }
+}
+
+.art-holder-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.art-l-imageh {
+    position: sticky;
+    width: 900px;
+    height: 100%;
+    top: 100px;
+    padding: 30px 0;
+    background-color: gray;
+    justify-content: center;
+}
+
+.art-l-image {
+    height: 500px;
+    width: 500px;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #424242;
+}
+
+.art-l-i-button {
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: rgb(69, 69, 69);
+    color: white;
+}
+
+.art-stiky {
+    width: 600px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
