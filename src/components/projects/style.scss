@@ -1,24 +1,10 @@
 .project-holder {
-    margin: 30px;
-    width: 300px;
-    height: 200px;
+    margin: 15px 15px 30px;
+    padding: 0 0 30px;
+    width: 350px;
     background: #353535;
-    border-radius: 30px;
+    border-radius: 20px;
     position: relative;
-
-    &:hover {
-        img {
-            visibility: hidden;
-        }
-
-        p {
-            visibility: visible;
-        }
-
-        a {
-            visibility: visible;
-        }
-    }
 }
 
 .project-titel {
@@ -26,67 +12,78 @@
     color: white;
     font-weight: bold;
     margin: 10px;
+    font-size: 20px;
 }
 
-.project-tap {
-    position: absolute;
-    Top: 5px;
-    left: 20px;
-    color: white;
-    font-size: 12px;
-}
 
 .project-image {
     display: block;
-    margin: 0 auto;
+    margin: 5px auto;
     height: 140px;
     z-index: 10;
 }
 
-.project-button1 {
-    visibility: hidden;
-    position: absolute;
-    right: 20px;
-    bottom: 10px;
-    z-index: 2;
-    padding: 0 10px;
-    font-size: 14px;
-
-    color: black;
-    background-color: silver;
-    border-radius: 20px;
-    cursor: pointer;
-    text-decoration: none;
+.project-date-created{
+    color:whitesmoke;
     text-align: center;
-
-    &:hover {
-        font-size: 18px;
-        right: 10px;
-        bottom: 5px;
-    }
-
-    &:active {
-        font-size: 16px;
-        right: 12px;
-        bottom: 7px;
-    }
+    margin: 0 0 10px;
+    font-size: 12px;
 }
 
 .project-data {
-    visibility: hidden;
-    position: absolute;
+    margin: 20px 0 ;
     padding: 0 20px;
-    margin: 0;
-
-    color: white;
+    color: rgb(254, 254, 254);
     font-size: 12px;
     font-family: cursive;
-    text-align: center;
 }
+
+.project-main-title{
+    color:#f7ffb7;
+}
+
+.project-links{
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+
+    position: absolute;
+    bottom: 10px;
+    div{
+        width: 59.8px;
+    }
+}
+
+.project-button1 {
+    display: block;
+    width: 55px;
+    text-align: center;
+    font-size: 14px;
+    border: 3px solid silver;
+    border-radius: 20px;
+
+
+    color: black;
+    background-color: rgb(185, 185, 185);
+    
+    cursor: pointer;
+    text-decoration: none;
+
+
+    transition-duration: .5s;
+    &:hover{
+        transform: scale(1.2);
+    }
+    &:active{
+        transform: scale(1.1);
+    }
+}
+
 
 .project-holdertwo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+
     padding: 50px 0;
 }

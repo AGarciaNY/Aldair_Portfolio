@@ -16,10 +16,7 @@ export default function ArtWork() {
       <div className='art-holder' key={i}>
         <p className='art-titel'>{nameString}</p >
         <img className='art-image' alt={imagelink} src={imagelink} />
-        <button className='art-button-one' showthis="true" onClick={() => {
-          setArtLink(imagelink)
-          setSon('flex')
-        }}>Enlarge</button>
+        <button className='art-button-one' showthis="true" onClick={() => (setArtLink(imagelink) , setSon('flex'))}>Enlarge</button>
       </div >
     );
   }

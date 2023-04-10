@@ -1,10 +1,13 @@
 .art-holder {
-    margin: 20px;
+    margin: 40px 100px;
     width: 225px;
     height: 250px;
     background: #353535;
     border-radius: 30px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .art-holder-one {
@@ -16,7 +19,6 @@
 
 .art-titel {
     color: white;
-    text-align: center;
     font-weight: bold;
     margin: 10px 0;
 }
@@ -24,35 +26,29 @@
 .art-image {
     display: block;
     margin: 0 auto;
-    height: 140px;
+    max-height: 170px;
+    max-width: 190px;
 }
 
 .art-button-one {
-    position: absolute;
-    width: 175px;
-    bottom: 10px;
-    left: 25px;
-    z-index: 2;
-    padding: 5px 30px;
-    color: black;
-    background-color: silver;
+    width: 70px;
     border-radius: 20px;
-    cursor: pointer;
-    text-decoration: none;
+
+    position: absolute;
+    bottom: 10px;
+
+    background-color: silver;
+
     font-size: 14px;
     text-align: center;
+    cursor: pointer;
+    transition-duration: .5s;
 
     &:hover {
-        font-size: 16px;
-        width: 185px;
-        bottom: 8px;
-        left: 20px;
+        transform: scale(1.2);
     }
-
     &:active {
-        font-size: 14px;
-        left: 23px;
-        bottom: 8px;
+        transform: scale(1.1);
     }
 }
 

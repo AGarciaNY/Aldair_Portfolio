@@ -26,10 +26,10 @@ const Home = () => (
       <img src={pig} alt='' />
     </div>
     <h1 className='home-header-name'>Hi I am Aldair,</h1>
-    <h1 className='home-header-name'> a software engineer</h1>
+    <h1 className='home-header-name'> a Software Wngineer and I'm currently looking for employment</h1>
     <div className='home-content'>
       <div>
-        <h1 className='home-about-title'>about me</h1>
+        <p>about me</p>
       </div>
     </div>
   </div>
