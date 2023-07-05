@@ -5,7 +5,14 @@
 .home-portfolio-pic {
     display: flex;
     justify-content: center;
-
+    div{
+        background-color:red;
+        width:200px;
+        height: 200px;
+        background-image: url("../../img/icons/AG.jpeg");
+        background-size: 210px;
+        border-radius: 100%;
+    }
     img {
         margin: 30px 0;
         height: 200px;
@@ -16,7 +23,46 @@
 .home-header-name {
     text-align: center;
 }
-.home-content{
+
+.home-content {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(42, 42, 42);
+    color:white;
+    padding: 0 10%;
+}
+
+.skills-holder p {
+    margin: 10px;
+}
+
+.skills-holder {
+    margin: 0 30px;
+
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+}
+
+@for $i from 0 through 10 {
+    .skills-holder p:nth-child(#{$i}) {
+        animation: goRed 10s linear #{$i * 2}s infinite alternate;
+    }
+}
+
+@keyframes goRed {
+    0% {
+        // background-color: rgba(123, 123, 123, 0);
+        opacity: 1;
+    }
+
+    50% {
+        // background-color: rgba($color: #9c0000, $alpha: 1.0);
+        opacity: .75;
+    }
+
+    100% {
+        // background-color: rgba(123, 123, 123, 0);
+        opacity: .05;
+    }
 }

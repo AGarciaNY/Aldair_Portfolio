@@ -1,6 +1,6 @@
 class Projects {
 
-  constructor(id, createdDate, image, info, contribution, tools, githubLink, link, parents, timeFrame) {
+  constructor(id, createdDate, image, info, contribution, tools, githubLink, link, parents, timeFrame, top) {
 
     this.id = id;
     this.createdDate = createdDate;
@@ -12,6 +12,7 @@ class Projects {
     this.link = link;
     this.parents = parents;
     this.timeFrame = timeFrame
+    this.top = top
 
   }
 }
@@ -48,7 +49,8 @@ let data = [
     "https://github.com/AGarciaNY/piglaten",
     "https://agarciany.github.io/piglaten/",
     ["Aldair"],
-    "October 2017"
+    "October 2017",
+    false
   ),
 
   new Projects(
@@ -61,7 +63,8 @@ let data = [
     "https://github.com/AGarciaNY/Hangman",
     "https://agarciany.github.io/Hangman/",
     ["Aldair"],
-    "December 2017"
+    "December 2017",
+    false
   ),
 
   // new Projects(
@@ -84,11 +87,11 @@ let data = [
     "GipherThis is a cool project that my teammate and I worked on. This website helps you find giphs, such as cats flying in the sky or cool pokemon. Just try it.",
     "used gith api",
     "HTML, CSS, Javascript",
-    "coming sooon",
     "https://github.com/AGarciaNY/gif",
     "https://agarciany.github.io/gif/",
     ["Aldair"],
-    "Febuary 2019"
+    "Febuary 2019",
+    false
   ),
 
   // new Projects(
@@ -112,7 +115,10 @@ let data = [
     "",
     "HTML, CSS, JavaScript, and Firebase",
     "https://jalvarez2016.github.io/Compture-science-class/",
+    "none",
     ["Aldair", "Jason"],
+    "December 2019",
+    false
   ),
 
   // new Projects(
@@ -145,7 +151,8 @@ let data = [
     "https://github.com/AGarciaNY/Hackathon2020",
     'https://ta-ag-ja-yep-anticovid.netlify.app/',
     ['Aldair', 'Jason', 'Ye P'],
-    "April 2020"
+    "April 2020",
+    false
   ),
 
   new Projects(
@@ -158,7 +165,8 @@ let data = [
     "https://github.com/Will-Of-Fire-CP",
     "https://agarciany.itch.io/will-of-fire",
     "solo",
-    "December February 2023"
+    "December February 2023",
+    true
   ),
 
   new Projects(
@@ -171,7 +179,8 @@ let data = [
     "https://github.com/AGarciaNY/impossible_five_game_jam2023",
     "https://evanlu1134.itch.io/bound-to-work",
     "solo",
-    "January 2023"
+    "January 2023",
+    false
   ),
 
   new Projects(
@@ -184,12 +193,13 @@ let data = [
     "https://github.com/Give-A-Way",
     "https://give-a-way.netlify.app/",
     "Team",
-    "November-December 2022"
+    "November-December 2022",
+    true
   ),
   new Projects(
     "Wordly Palace",
     new Date('September 2, 2022'),
-    "https://media.licdn.com/dms/image/D4E2DAQGN-2pfThvv0A/profile-treasury-image-shrink_800_800/0/1664644259603?e=1681671600&v=beta&t=zOgoUzBYuzmqdLkR4wq6n3ESq0tIJ5lLku0ezKjQWbo",
+    "https://i.imgur.com/akUjJhc.jpeg",
     "A place where people can learn interesting words people don’t use often.",
     "Created a login/sign-up page using Firebase(a hosting service) by connecting Firebase’s database to our application and storing the user's information in it by pushing it to Firebase. I also Designed a database that stores user information by using objects and adding properties that would store the user’s information and then adding it to my database by pushing it to Firebase",
     "Word of the Day (API), HTML, CSS, JavaScript, and Firebase",
@@ -201,7 +211,7 @@ let data = [
   new Projects(
     "Catch The Apples",
     new Date('September 1, 2022'),
-    "https://media.licdn.com/dms/image/D4E2DAQErLsraER_OLA/profile-treasury-image-shrink_800_800/0/1664644271672?e=1681686000&v=beta&t=wCEQG5b9pf6XXaI_-TEnCphaZFupFRZ4SEdb0l3wGFM",
+    "https://i.imgur.com/UgJUvjY.jpeg",
     "Catch The Apples is a single/multiplayer game where players have to catch apples with a barrel within two minutes. This game was created by Sumaira Khan and me. I worked as a developer on this amazing two-person team. We used HTML, CSS, Javascript(with the library Kaboom), and Firebase for the creation of Catch The Apples.",
     "Designed a database using Firebase to store the players' scores and the time remaining online, making the  game multiplayer ,and Mastered the use of Kaboom within the week impacting the efficiency of my team",
     "Figma, HTML, CSS, JavaScript(kaboom), Firebase",
@@ -237,7 +247,7 @@ let data = [
   new Projects(
     "Coming to America",
     new Date('July  , 2022'),
-    "https://img.itch.zone/aW1nLzk1MTc1NTcucG5n/347x500/hDEUIf.png",
+    "https://i.imgur.com/f4uAXMO.png",
     "A place where people in the United States can learn why and how immigrants make the journey to the United States",
     "Designed and built Journey and Aftermath page in VS Code. I also added animation to text boxes as you scroll down the page with CSS animation property",
     "Figma, JavaScript, HTML, CSS, Bootstrap",
