@@ -9,7 +9,7 @@ import data from './data';
 
 // components
 // import AboutMe from './home-items/about-me';
-// import MyLerning from './home-items/my-learning'; 
+// import MyLerning from './home-items/my-learning';  
 
 // const Home = () => (
 //       <HomeContent>
