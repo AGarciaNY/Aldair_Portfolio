@@ -82,7 +82,7 @@ export default class Nav extends Component {
     return (
       <div className="nav-container">
         <div className='nav-name-div'>
-          <h1 className="nav-name">Aldair's Portfolio</h1>
+          <h1 className="nav-name">Aldair's Portfolio ha ha</h1>
         </div >
         <div className="nav-link-holder">
           <div className='nav-link-div'>
